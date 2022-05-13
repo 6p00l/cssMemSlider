@@ -25,3 +25,35 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.buttons {
+    display: flex;
+    
+}
+
+.btn_hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2vw;
+    height: 2vw;
+    opacity: 1;
+    margin-right: 0.3vw;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 1vw;
+
+}
+
+span {
+    width: 1vw;
+    height: 1vw;
+    background-color: blue;
+    border-radius: 0.5vw;
+    opacity: 0.5;
+      
+}
+
+.btn_hover:hover > span {
+    opacity: 1;
+}
