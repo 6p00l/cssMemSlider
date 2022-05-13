@@ -10,13 +10,13 @@
     margin: auto;
     margin-top: 10%;
     width: 50%;
-    background-color: aquamarine;
+    background-color:darkgray;
     overflow: hidden;
 }
 
 .images_wrapper {
     margin: auto;
-    margin: 5% 3% 5% 3%;
+    margin: 5% 3% 0% 3%;
     width: 94%;
     overflow: hidden;
 }
@@ -25,8 +25,9 @@
 .footer {
     display: flex;
     flex-direction: row;
-    margin: 0 0 5% 0;
+    margin: 2% 8% 5% 0%;
     justify-content: space-between;
+    align-items: center;
     
     
 }
@@ -43,9 +44,8 @@
     width: 2vw;
     height: 2vw;
     opacity: 1;
-    margin-right: 0.3vw;
+    margin-right: 0.1vw;
     cursor: pointer;
-    background-color: #fff;
     border-radius: 1vw;
     
 }
@@ -55,7 +55,7 @@ span {
     height: 1vw;
     background-color: blue;
     border-radius: 0.5vw;
-    opacity: 0.5;
+    opacity: 0.3;
     
 }
 
@@ -66,13 +66,12 @@ span {
 .images {
     display: flex;
     width: 400%;
-    height: 35vh;    
-    
+    height: 20vw;    
+    transition: 0.6s ;
 }
 
 .image {
     width: 25%;
-    transition: 0.3s;
  }
 
 img {
@@ -85,46 +84,78 @@ input {
 }
 
 
-#radio1[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
-    margin-left:0;
+#radio1[type=radio]:checked ~.wrapper .images_wrapper .images
+ {
+    transform: translate(0%);
 }
-#radio2[type=radio]:checked  ~.wrapper .images_wrapper .images .img_main  {
-    margin-left:-25%;
+#radio2[type=radio]:checked  ~.wrapper .images_wrapper .images
+   {
+    transform: translateX(-25%);
+
 }
-#radio3[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
-    margin-left:-50%;
+#radio3[type=radio]:checked ~.wrapper .images_wrapper .images
+  {
+    transform: translateX(-50%);
 }
-#radio4[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
-    margin-left:-75%;
+#radio4[type=radio]:checked ~.wrapper .images_wrapper .images
+ {
+    transform: translateX(-75%);
 }
 
 .text_wrapper {
     width: 92%;
-    margin: 0 20% 0 8%;
+    margin: 0 30% 0 8%;
     overflow: hidden;
 }
 .texts {
     display: flex;
     width: 400%;
+    transition: 0.4s;
 }
 
 .text {
+    font-size: 1.2rem;
     width: 25%;
-    transition: 0.3s;
 
 }
 
-#radio1[type=radio]:checked ~ .wrapper .footer .text_wrapper .texts .text_main {
-    margin-left:0;
+#radio1[type=radio]:checked ~ .wrapper .footer .text_wrapper .texts {
+    transform: translate(0%);
 }
-#radio2[type=radio]:checked ~.wrapper .footer .text_wrapper .texts .text_main {
-    margin-left:-25%;
+#radio2[type=radio]:checked ~.wrapper .footer .text_wrapper .texts {
+    transform: translate(-25%);
 }
-#radio3[type=radio]:checked ~.wrapper .footer .text_wrapper .texts .text_main {
-    margin-left:-50%;
+#radio3[type=radio]:checked ~.wrapper .footer .text_wrapper .texts {
+    transform: translate(-50%);
 }
-#radio4[type=radio]:checked ~.wrapper .footer .text_wrapper .texts .text_main {
-    margin-left:-75%;
+#radio4[type=radio]:checked ~.wrapper .footer .text_wrapper .texts {
+    transform: translate(-75%);
 }
 
+
+
+#radio1[type=radio]:checked ~.wrapper  .btn1 .btn {
+    background-color:blue;
+    opacity: 1;
+
+}
+
+#radio2[type=radio]:checked ~.wrapper  .btn2 .btn   {
+    background-color: blue;
+    opacity: 1;
+
+}
+
+#radio3[type=radio]:checked ~.wrapper  .btn3 .btn  {
+    background-color: blue;
+    opacity: 1;
+
+
+}
+
+#radio4[type=radio]:checked ~.wrapper  .btn4 .btn {
+    background-color: blue;
+    opacity: 1;
+
+}
 
