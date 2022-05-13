@@ -9,16 +9,15 @@
     flex-direction: column;
     margin: auto;
     margin-top: 10%;
-    
-    width: 40%;
-    height: 50%;
+    width: 50%;
     background-color: aquamarine;
     overflow: hidden;
 }
 
 .images_wrapper {
-    width: 90%;
     margin: auto;
+    margin: 5% 3% 5% 3%;
+    width: 94%;
     overflow: hidden;
 }
 
@@ -63,17 +62,13 @@ span {
 
 .images {
     display: flex;
-    margin: auto;
-    margin: 5% 0 5% 0;
-    width: 300%;
-    height: 35vh;
-    
+    width: 400%;
+    height: 35vh;    
     
 }
 
 .image {
-    width: 33.33%;
-    height: 100%;
+    width: 25%;
 }
 
 img {
@@ -82,15 +77,18 @@ img {
 }
 
 input {
-    visibility: hidden;
+    display: none;;
 }
 
-#radio1[type=radio]:checked ~ .img_main {
+#radio1[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
     margin-left:0;
 }
-#radio2[type=radio]:checked ~ .img_main {
-    margin-left:-33.33%;
+#radio2[type=radio]:checked  ~.wrapper .images_wrapper .images .img_main {
+    margin-left:-25%;
 }
-#radio3[type=radio]:checked ~ .img_main {
-    margin-left:-66.66%;
+#radio3[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
+    margin-left:-50%;
+}
+#radio4[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
+    margin-left:-75%;
 }
