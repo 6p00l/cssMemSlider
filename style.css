@@ -25,7 +25,10 @@
 .footer {
     display: flex;
     flex-direction: row;
+    margin: 0 0 5% 0;
     justify-content: space-between;
+    
+    
 }
 
 .buttons {
@@ -69,7 +72,8 @@ span {
 
 .image {
     width: 25%;
-}
+    transition: 0.3s;
+ }
 
 img {
     width: 100%;
@@ -80,10 +84,11 @@ input {
     display: none;;
 }
 
+
 #radio1[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
     margin-left:0;
 }
-#radio2[type=radio]:checked  ~.wrapper .images_wrapper .images .img_main {
+#radio2[type=radio]:checked  ~.wrapper .images_wrapper .images .img_main  {
     margin-left:-25%;
 }
 #radio3[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
@@ -92,3 +97,34 @@ input {
 #radio4[type=radio]:checked ~.wrapper .images_wrapper .images .img_main {
     margin-left:-75%;
 }
+
+.text_wrapper {
+    width: 92%;
+    margin: 0 20% 0 8%;
+    overflow: hidden;
+}
+.texts {
+    display: flex;
+    width: 400%;
+}
+
+.text {
+    width: 25%;
+    transition: 0.3s;
+
+}
+
+#radio1[type=radio]:checked ~ .wrapper .footer .text_wrapper .texts .text_main {
+    margin-left:0;
+}
+#radio2[type=radio]:checked ~.wrapper .footer .text_wrapper .texts .text_main {
+    margin-left:-25%;
+}
+#radio3[type=radio]:checked ~.wrapper .footer .text_wrapper .texts .text_main {
+    margin-left:-50%;
+}
+#radio4[type=radio]:checked ~.wrapper .footer .text_wrapper .texts .text_main {
+    margin-left:-75%;
+}
+
+
