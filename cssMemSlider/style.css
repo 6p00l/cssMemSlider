@@ -7,7 +7,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 2%;
     width: 55vw;
     
     
@@ -85,7 +85,7 @@ img {
 }
 
 input {
-    display: none;;
+    visibility: hidden;
 }
 
 
@@ -127,8 +127,7 @@ input {
 
 }
 
-p {
-}
+
 
 
 #radio1[type=radio]:checked ~.wrapper  .btn1 .btn {
