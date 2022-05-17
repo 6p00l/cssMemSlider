@@ -57,8 +57,11 @@ span {
     background-color: blue;
     border-radius: 0.5vw;
     opacity: 0.3;
-    
-}
+    }
+
+    .btn_hover:active {
+        transform: scale(1.4);
+    }
 
 .btn_hover:hover > span {
     opacity: 1;
