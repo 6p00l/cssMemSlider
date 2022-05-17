@@ -8,7 +8,7 @@
     flex-direction: column;
     margin: auto;
     margin-top: 4%;
-    width: 50vw;
+    width: 60vw;
     
     
         background-color:darkgray;
@@ -150,6 +150,11 @@ input {
 @media (max-width:800px) {
     .image {
         height: 100%;
+    }
+
+    .wrapper {
+        width: 70vw;
+
     }
 
 
