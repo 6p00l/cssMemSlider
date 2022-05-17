@@ -117,12 +117,17 @@ input {
     display: flex;
     width: 400%;
     transition: 0.4s;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
     font-size: 1.7vw;
     width: 25%;
 
+}
+
+p {
 }
 
 
