@@ -58,6 +58,7 @@ span {
     background-color: blue;
     border-radius: 0.5vw;
     opacity: 0.3;
+    
     }
 
     .btn_hover:active {
@@ -66,6 +67,8 @@ span {
 
 .btn_hover:hover > span {
     opacity: 1;
+    border: 0.15vw solid;
+    border-color: white;
 }
 
 .images {
